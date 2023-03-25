@@ -1,0 +1,33 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#profile-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#profile-image {
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+#profile-details {
+	display: flex;
+	flex-direction: column;
+}
+
+#profile-details p {
+	margin: 0;
+}
+
+#profile-details span {
+	font-weight: bold;
+}
+
