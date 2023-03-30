@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Registration</h1>
-        <form id="registration-form">
+	<form id="register" method="POST" action="{{ url_for('register') }}" >
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -34,10 +34,13 @@
                 <button type="submit">Register</button>
             </div>
         </form>
+	<div class="to-login"> 
+		<p> have an account? <a href="{{ url_for('login') }}"> Sign in </a> </p> 
+	</div> 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{{ url_for('static', filename='register.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/register.js') }}"></script>
 </body>
 </html>
 

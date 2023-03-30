@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Ride</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <script src="https://kit.fontawesome.com/6001d28e81.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="brand-logo">RideShare</a>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="map"></div>
+
+    <div class="booking-container">
+        <div class="booking-box">
+            <h2>Book a Ride</h2>
+            <div class="form-group">
+                <label for="pickup-location">Pickup Location</label>
+                <input type="text" id="pickup-location" class="form-control" placeholder="Enter pickup location">
+            </div>
+            <div class="form-group">
+                <label for="dropoff-location">Drop-off Location</label>
+                <input type="text" id="dropoff-location" class="form-control" placeholder="Enter drop-off location">
+            </div>
+            <div class="form-group">
+                <label for="ride-type">Ride Type</label>
+                <select id="ride-type" class="form-control">
+                    <option value="regular">Regular</option>
+                    <option value="premium">Premium</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="distance">Distance (km)</label>
+                <input type="text" id="distance" class="form-control" placeholder="Distance" disabled>
+            </div>
+            <div class="form-group">
+                <label for="fare">Estimated Fare (ETB)</label>
+                <input type="text" id="fare" class="form-control" placeholder="Estimated fare" disabled>
+            </div>
+            <button id="book-btn" class="btn">Book Now</button>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBsbhwcIs_GUiSfr1iDG6BgX2fbiIx90M&callback=initMap" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBsbhwcIs_GUiSfr1iDG6BgX2fbiIx90M"></script>
+    <script src="{{ url_for('static', filename='js/book.js') }}"></script>
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBsbhwcIs_GUiSfr1iDG6BgX2fbiIx90M&callback=initMap" async defer></script> -->
+</body>
+</html>
+

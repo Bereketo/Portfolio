@@ -1,24 +1,34 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>User Profile</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='profile.css') }}">
+  <title>User Profile</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='profile.css') }}">
 </head>
 <body>
-	<div class="container">
-		<h1>User Profile</h1>
-		<div id="profile-container">
-			<div id="profile-image"></div>
-			<div id="profile-details">
-				<p>Name: <span id="profile-name"></span></p>
-				<p>Email: <span id="profile-email"></span></p>
-				<p>Phone Number: <span id="profile-phone"></span></p>
-			</div>
-		</div>
-	</div>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>>
-        <script src="{{ url_for('static', filename='profile.js') }}"></script>
-
+  <div class="container">
+    <h1>User Profile</h1>
+    <div class="profile-card">
+      <div class="profile-card-header">
+        <div class="profile-card-image"></div>
+        <div class="profile-card-name">{{ User['name'] }}</div>
+      </div>
+      <div class="profile-card-body">
+        <div class="profile-card-info">
+          <div class="profile-card-info-label">Email:</div>
+          <div class="profile-card-info-value">{{ User['email'] }}</div>
+        </div>
+        <div class="profile-card-info">
+          <div class="profile-card-info-label">Phone Number:</div>
+          <div class="profile-card-info-value">{{ User['phone_number'] }}</div>
+        </div>
+      </div>
+      <div class="profile-card-buttons">
+        <button class="profile-card-button EditProfile">Edit Profile</button>
+        <button class="profile-card-button OrderRide">Order Ride</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='js/profile.js') }}"></script>
 </body>
 </html>
 

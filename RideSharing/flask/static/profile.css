@@ -1,33 +1,115 @@
+body {
+  background-color: #bfd5ec;
+}
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-#profile-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+.profile-card {
+  background-color: #f7f9fd;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-#profile-image {
-	width: 100px;
-	height: 100px;
-	background-color: #ccc;
-	border-radius: 50%;
-	margin-right: 20px;
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-#profile-details {
-	display: flex;
-	flex-direction: column;
+.profile-card-image {
+  background-color: #999;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
 }
 
-#profile-details p {
-	margin: 0;
+.profile-card-name {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-#profile-details span {
-	font-weight: bold;
+.profile-card-body {
+  padding: 20px;
+  flex-grow: 1; /* Added */
+}
+
+.profile-card-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-card-info-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.profile-card-info-value {
+  font-weight: normal;
+}
+
+.profile-card-buttons { /* Added */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-card-button {
+  background-color: #111312;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.OrderRide {
+
+  position: absolute;
+  top: 500px;
+}
+
+.profile-card-button:hover {
+  background-color: #6c726e;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0069d9;
+}
+
+.button-secondary {
+  background-color: #6c757d;
+}
+
+.button-secondary:hover {
+  background-color: #5a6268;
 }
 

@@ -1,13 +1,14 @@
 $(document).ready(function() {
-    $('#register').submit(function(event) 
-     // document.querySelector('form').addEventListener('submit', function(event) {
-     //   event.preventDefault();
-       {
+    $('#register').submit(function(event) { 
+        event.preventDefault();
         var name = $('#name').val();
         var email = $('#email').val();
         var phone_number = $('#phone-number').val();
         var password = $('#password').val();
         var confirm_password = $('#confirm-password').val();
+
+        console.log("password: ", password);
+        console.log("confirm_password: ", confirm_password);
 
         if (password != confirm_password) {
             alert('Passwords do not match');

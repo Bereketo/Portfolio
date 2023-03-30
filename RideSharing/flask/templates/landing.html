@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta httpequiv="X-UA-Compatible" content="ie=edge">
+		<title>Ride-Sharing </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+	</head>
+	<body>  
+		<h1>Ride-Sharing </h1>
+		<div class=nav-bar> 
+			<ul class="nav-ul">
+				<li class="nav-item"> 
+					<a class="nav-link home" href="#"><img class="home-icon" src="{{ url_for('static', filename='images/home1.png') }}">
+					Home </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link about" href="#AboutUS"><img class="aboutus-icon" src="{{ url_for('static', filename='images/aboutus.png') }}" 
+						alt="aboutus">About Us 
+				        </a>
+				</li>
+				<li class="nav-item"> 
+					<a class="nav-link contact" href="#"><img class="contactus-icon" 
+										  src="{{ url_for('static', filename='images/contactUs.png') }}"  
+										  alt="contactus">Contact Us 
+					</a>
+				</li>
+			</ul>
+		</div>
+                <div class="bimage"> 
+			<img src="{{ url_for('static', filename='images/ride3.jpg') }}" alt="ride cars" class="ride-cars">
+		</div>
+
+		<div class="container">
+			<a href="{{ url_for('register') }}" class="button">Sign Up </a>
+			<a href=" {{ url_for('login') }}" class="button">Log In </a>
+               </div>
+
+	       <div class="about-us-section" id="AboutUS">
+  			<h2>Welcome to our ride-sharing service!</h2>
+  			<p>We are a team of passionate individuals who believe in the power of sharing rides to make transportation 
+			more affordable, convenient, and eco-friendly.</p>
+
+  			<h3>Our Mission</h3>
+  			<p>Our mission is to make your daily commute or occasional travel a seamless experience. We know how stressful and 
+			time-consuming it can be to find parking or wait for public transportation. That's why we offer a range of flexible 
+			and affordable ride-sharing options, including carpooling, shared rides, and private rides.</p>
+
+  			<h3>Our Drivers</h3>
+  			<p>At our ride-sharing service, we pride ourselves on providing safe, reliable, and comfortable rides. 
+			All of our drivers are carefully screened and trained to ensure they meet our high standards for professionalism and customer service. 
+			We also use the latest technology to make booking your ride a breeze, and we're always looking for ways to improve your experience.
+			</p>
+
+  			<h3>Our Community</h3>
+  			<p>But we're not just about getting you from point A to point B - we're also about creating a community of riders who share our values. 
+			We believe that by sharing rides, we can reduce traffic congestion and air pollution, while also building connections with our fellow riders.			      </p>
+  		       <p>Thank you for considering our ride-sharing service, and we look forward to helping you get where you need to go.</p>
+		</div>
+	
+		<footer class="footer">
+  			<div class="footer-links">
+    				<a href="#">Home</a>
+    				<a href="#AboutUs">About Us</a>
+    				<a href="#">Services</a>
+    				<a href="#">Contact Us</a>
+  				</div>
+  			<p>&copy; 2023 Your Ride-Share Company. All rights reserved.</p>
+		</footer>
+
+
+	</body>
+</html
