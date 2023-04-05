@@ -2,7 +2,7 @@
 
  Ride-Sharing is a web app that helps users to book a ride from anywhere they are and
  it helps users to order a ride without having to go anywhere.
-![Ride-Sharing] (https://github.com/Bereketo/Portfolio/tree/main/RideSharing/flask/static/images)
+![Ride-Sharing] (https://github.com/Bereketo/Portfolio/tree/main/RideSharing/flask/static/images/ride3.jpg)
  
 # Usage
   Ride-Sharing has the following functionalities
